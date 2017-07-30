@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="heading">Burgers
+    <div class="heading">SQLized Burgers
     </div>
     <div class="inputBurger">
         <form class="burgForm" action="/" method="POST">
@@ -16,7 +16,7 @@
             <div class="burgerCell">
                 <li>
                     <div class="burgerName">
-                        {{this.burger_name}}
+                        {{this.name}}
                     </div>
                 </li>
                 <div class="eat">
@@ -35,7 +35,7 @@
             {{#each burgers}} {{#if this.devoured}}
             <div class="burgerCell">
                 <li>
-                    {{this.burger_name}}
+                    {{this.name}}
                 </li>
                 <div class="del">
                     <form action="/{{this.id}}?_method=DELETE" method="POST">
