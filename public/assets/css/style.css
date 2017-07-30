@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(9,1fr); 
+    grid-template-rows: 50px 100px auto 100px auto 100px 100px auto;
+}
+
+.testing {
+    background-color: red;
+}
+
+.heading {
+    color: white;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    text-align: center;
+    grid-row-start: 2;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 80px;
+}
+
+.inputBurger {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    text-align: center;
+    padding-top: 10px
+}
+
+.burgText {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.burgerContainer {
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+.eatenContainer {	
+	grid-column-start: 6;
+	grid-column-end: 9;
+}
+
+.burgerWell {
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 25px;
+    grid-row-start: 5;
+    min-height: 600px;
+}
+
+.burgerCell {
+	text-align: left;
+    font-size: 24px;
+    padding: 10px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+	grid-column-start: 2;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	background-color:rgba(0,0,0,0.4);
+	border-radius: 10px;
+}
+
+.burgerName {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.submit {
+	margin-top: 10px;
+	height: 40px;
+	font-size: 24px;
+}
+
+.eatBtn {
+    font-size: 24px;
+    border-radius: 10px;
+}
+
