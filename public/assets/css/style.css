@@ -15,8 +15,8 @@ body {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(9,1fr); 
-    grid-template-rows: 50px 100px auto 100px auto 100px 100px auto;
-}
+/*    grid-template-rows: 50px 100px auto 100px auto 100px 100px auto;
+*/}
 
 .testing {
     background-color: red;
