@@ -9,17 +9,10 @@ body {
     background-position: center;
 }
 
-
-
 .container {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(9,1fr); 
-    grid-template-rows: 50px 100px auto 100px auto 100px 100px auto;
-}
-
-.testing {
-    background-color: red;
 }
 
 .heading {
@@ -43,6 +36,22 @@ body {
     padding-top: 10px
 }
 
+.burgerWell {
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 25px;
+    grid-row-start: 5;
+    min-height: 600px;
+}
+
+.testing {
+    background-color: red;
+}
+
 .burgText {
     margin-top: 10px;
     font-size: 24px;
@@ -56,18 +65,6 @@ body {
 .eatenContainer {	
 	grid-column-start: 6;
 	grid-column-end: 9;
-}
-
-.burgerWell {
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    background-color:rgba(0,0,0,0.3);
-    border-radius: 25px;
-    grid-row-start: 5;
-    min-height: 600px;
 }
 
 .burgerCell {
