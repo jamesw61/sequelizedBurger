@@ -4,7 +4,8 @@ var router = express.Router();
 
 
 router.get("/", function(req, res) {
-    db.Burger.findAll({}).then(function(results) {
+    db.Burger.findAll({ include: [db.Customer] }).then(function(results) {
+        console.log(results);
         res.render("index", { bacon: results });
     });
 });
